@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body{
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    -khtml-user-select: none; /*早期浏览器*/
+    user-select: none;
+}
+#wrapper{
+    width: 850px;
+    height:312px;
+    margin: 20px auto;
+    position:relative;
+    background: pink;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    -moz-box-shadow: 0 0 25px rgba(0,0,0,0.7);
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+#explain{
+    width: 1000%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.7) ;
+    z-index: 2;
+    color: white;
+    line-height: 50px;
+    float: left;
+}
+#explain span{
+    text-indent: 2em;
+    width: 10%;
+    float: left;
+}
+#content{
+    width: 1000%;
+    height:100%;
+    position:absolute;
+    z-index: 1;
+}
+#content img{
+    /*max-width: 100%;*/
+    /*height: 100%;*/
+    width:10%;
+    float: left;
+}
+.paganation{
+    width: 100%;
+    position: absolute;
+    bottom:10px;
+    text-align:center;
+    z-index: 2;
+}
+.paganation span{
+    margin: 5px;
+    padding:5px 8px;
+    background: #F2F2F2;
+    color:red;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    border:1px solid coral;
+  }
+.paganation .selected{
+    background: red;
+    color:white;
+}
+.arrow{
+    position:absolute;
+    top:150px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+    z-index: 2;
+    background: rgba(0,0,0,0.3);
+}
+#next{
+    right: 0;
+}
+.arrow:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.7);
+}
